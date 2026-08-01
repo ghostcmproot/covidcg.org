@@ -1,0 +1,288 @@
+# 📱 Mobile-Responsive One Page Website (HTML + CSS)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UMA AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Inter,sans-serif;
+    background:#0f172a;
+    color:#fff;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    padding:20px 0;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+.btn{
+    display:inline-block;
+    background:#38bdf8;
+    color:#000;
+    padding:14px 28px;
+    border-radius:50px;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:50px;
+    min-height:90vh;
+}
+
+.hero h1{
+    font-size:60px;
+    line-height:1.1;
+}
+
+.hero p{
+    margin:25px 0;
+    color:#cbd5e1;
+}
+
+.hero img{
+    width:100%;
+}
+
+section{
+    padding:90px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.pricing .card{
+    border:2px solid #334155;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    border-top:1px solid #334155;
+    color:#94a3b8;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+nav ul{
+display:none;
+}
+
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+padding-top:40px;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.section-title{
+font-size:30px;
+}
+
+.btn{
+display:block;
+width:100%;
+margin-top:15px;
+}
+
+.container{
+width:92%;
+}
+
+section{
+padding:60px 0;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">UMA AI</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Features</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+<div class="hero">
+
+<div>
+
+<h1>AI That Works Smarter</h1>
+
+<p>Create content, chat with AI, generate images and automate your work from one powerful platform.</p>
+
+<a class="btn" href="#">Get Started</a>
+
+</div>
+
+<div>
+
+<img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=900" alt="AI">
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">Features</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>🤖 AI Chat</h3>
+<p>Fast intelligent conversations.</p>
+</div>
+
+<div class="card">
+<h3>✍ AI Writing</h3>
+<p>Create blogs, emails and reports.</p>
+</div>
+
+<div class="card">
+<h3>🎨 AI Images</h3>
+<p>Generate beautiful images instantly.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="pricing">
+
+<div class="container">
+
+<h2 class="section-title">Pricing</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Free</h3>
+<p>Basic AI Chat</p>
+<h2>$0</h2>
+</div>
+
+<div class="card">
+<h3>Pro</h3>
+<p>Unlimited AI Tools</p>
+<h2>$19</h2>
+</div>
+
+<div class="card">
+<h3>Enterprise</h3>
+<p>Custom Solution</p>
+<h2>Contact</h2>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 UMA AI • All Rights Reserved
+
+</footer>
+
+</body>
+</html>
+```
